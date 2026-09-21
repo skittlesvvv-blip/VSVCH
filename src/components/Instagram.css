@@ -1,0 +1,71 @@
+.instagram-section {
+    background: #f8f8f8;
+    padding: 55px 50px;
+}
+
+.instagram__container {
+    max-width: 1152px;
+    margin: 0 auto;
+    padding: 0 48px;
+}
+
+.instagram__title {
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+}
+
+.instagram__title-underline {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+.instagram__grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 4px;
+}
+
+.instagram__item {
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.instagram__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.instagram__item:hover .instagram__image {
+    transform: scale(1.08);
+}
+
+/* ========== ПЛАНШЕТ ========== */
+@media (max-width: 1024px) {
+    .instagram__grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4px;
+    }
+}
+
+/* ========== МОБИЛЬНЫЕ ========== */
+@media (max-width: 768px) {
+    .instagram-section {
+        padding: 35px 16px;
+    }
+    .instagram__container {
+        padding: 0;
+    }
+    .instagram__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .instagram__title {
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+}
