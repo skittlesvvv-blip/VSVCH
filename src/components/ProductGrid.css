@@ -1,0 +1,55 @@
+.catalog-section {
+    background: #ffffff;
+    padding: 40px 0 90px;
+}
+
+.catalog__container {
+    max-width: 1152px;
+    margin: 0 auto;
+    padding: 0 48px;
+}
+
+.catalog__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.catalog__image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.4s ease;
+}
+
+.catalog__item:hover .catalog__image {
+    transform: scale(1.04);
+}
+
+.catalog__grid .catalog__item:nth-child(2),
+.catalog__grid .catalog__item:nth-child(5) {
+    margin-top: 45px;
+}
+
+/* ========== ПЛАНШЕТ ========== */
+@media (max-width: 1024px) {
+    .catalog__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    .catalog__grid .catalog__item:nth-child(n) {
+        margin-top: 0;
+    }
+}
+
+/* ========== МОБИЛЬНЫЕ ========== */
+@media (max-width: 768px) {
+    .catalog-section {
+        padding: 20px 0 40px;
+    }
+    .catalog__container {
+        padding: 0 16px;
+    }
+    .catalog__grid {
+        grid-template-columns: 1fr;
+    }
+}

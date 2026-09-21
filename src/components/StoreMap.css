@@ -1,0 +1,53 @@
+.store-map {
+    background: #ffffff;
+    padding: 80px 48px;
+}
+
+.store-map .container {
+    max-width: 1152px;
+    margin: 0 auto;
+}
+
+.store-map .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #111;
+    margin-bottom: 15px;
+}
+
+.store-address {
+    text-align: center;
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.map-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* ========== ПЛАНШЕТ ========== */
+@media (max-width: 1024px) {
+    .store-map {
+        padding: 60px 20px;
+    }
+}
+
+/* ========== МОБИЛЬНЫЕ ========== */
+@media (max-width: 768px) {
+    .store-map {
+        padding: 40px 16px;
+    }
+    .store-map .section-title {
+        font-size: 22px;
+        letter-spacing: 2px;
+    }
+    .store-address {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+}
