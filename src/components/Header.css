@@ -1,107 +1,161 @@
+/* ============ БАЗОВЫЕ СТИЛИ ШАПКИ ============ */
 .catalog-header {
-    background: transparent;
-    border-bottom: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    padding: 25px 48px;
+  padding: 20px 48px;
+  z-index: 100;
+  transition: background 0.3s, color 0.3s;
 }
 
 .catalog-header__top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1152px;
-    margin: 0 auto;
-    position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1152px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .catalog-header__lang {
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    gap: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .lang-btn {
-    background: transparent;
-    border: none;
-    color: #ffffff;
-    cursor: pointer;
-    font-size: 11px;
-    opacity: 0.85;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 11px;
+  opacity: 0.85;
+  color: inherit;
 }
 
 .catalog-header__logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .catalog-header__logo a {
-    font-family: 'Playfair Display', serif;
-    font-size: 26px;
-    color: #ffffff;
-    letter-spacing: 4px;
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  letter-spacing: 4px;
+  color: inherit;
+  text-decoration: none;
 }
 
 .catalog-header__icons {
-    display: flex;
-    gap: 18px;
-    align-items: center;
+  display: flex;
+  gap: 18px;
+  align-items: center;
 }
 
 .header-icon {
-    background: none;
-    border: none;
-    color: #ffffff;
-    cursor: pointer;
-    font-size: 17px;
-    padding: 4px;
-    opacity: 0.9;
-    transition: all 0.2s ease;
-    position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 17px;
+  padding: 4px;
+  opacity: 0.9;
+  transition: all 0.2s ease;
+  position: relative;
+  color: inherit;
+  text-decoration: none;
 }
 
 .header-icon:hover {
-    opacity: 1;
-    transform: scale(1.1);
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 .badge {
-    position: absolute;
-    top: -5px;
-    right: -5px;
-    background: #fff;
-    color: #000;
-    border-radius: 50%;
-    width: 16px;
-    height: 16px;
-    font-size: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: #fff;
+  color: #000;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .catalog-header__nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    list-style: none;
-    margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+  list-style: none;
+  margin: 18px 0 0;
+  padding: 14px 0 0;
 }
 
 .catalog-header__nav a {
-    color: #ffffff;
-    font-size: 11px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    opacity: 0.85;
-    transition: opacity 0.3s;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  transition: color 0.3s;
 }
 
-.catalog-header__nav a:hover {
-    opacity: 1;
+.catalog-header__nav a:hover,
+.catalog-header__nav a.is-active {
+  color: #c9a66b;
+}
+
+.catalog-header__nav a.is-active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 1.5px;
+  background-color: #c9a66b;
+}
+
+/* ============ НА ГЛАВНОЙ: ПРОЗРАЧНЫЙ, ПОВЕРХ HERO ============ */
+.catalog-header--over-hero {
+  background: transparent;
+  border-bottom: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: #ffffff;
+}
+
+.catalog-header--over-hero .catalog-header__nav ul {
+  border-top: none;
+}
+
+/* ============ НА ДРУГИХ СТРАНИЦАХ: БЕЛЫЙ ============ */
+.catalog-header--solid {
+  background-color: #ffffff;
+  border-bottom: 1px solid #eee;
+  color: #000000;
+  position: relative;
+}
+
+.catalog-header--solid .catalog-header__nav ul {
+  border-top: 1px solid #eee;
+}
+
+/* ============ АДАПТИВ ============ */
+@media (max-width: 768px) {
+  .catalog-header {
+    padding: 12px 16px;
+  }
+  .catalog-header__logo a {
+    font-size: 22px;
+  }
+  .catalog-header__nav {
+    display: none;
+  }
+  .catalog-header__icons {
+    gap: 12px;
+  }
 }
