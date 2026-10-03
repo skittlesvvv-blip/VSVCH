@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "MONICA BIG",
+    "category": "printed",
+    "price": 450,
+    "image": "/images/catalog/monica-big.jpg",
+    "description": "Изысканная геометрическая форма и хищное цветовое решение. Достаточно вместительная для повседневного использования. Блистательная для вечернего выхода."
+  },
+  {
+    "id": 2,
+    "name": "SNAKE BAG #1",
+    "category": "printed",
+    "price": 390,
+    "image": "/images/catalog/snake-1.jpg",
+    "description": "Сумка с принтом змеиной кожи. Компактная и стильная."
+  },
+  {
+    "id": 3,
+    "name": "SNAKE BAG #2",
+    "category": "printed",
+    "price": 390,
+    "image": "/images/catalog/snake-2.jpg",
+    "description": "Сумка с принтом змеиной кожи. Компактная и стильная."
+  },
+  {
+    "id": 4,
+    "name": "MONICA SMALL",
+    "category": "classic",
+    "price": 420,
+    "image": "/images/catalog/monica-small.jpg",
+    "description": "Блистательная компактная модель, приковывающая взгляды своей фактурой и расцветкой. Беспроигрышный вариант для летних вечеров!"
+  },
+  {
+    "id": 5,
+    "name": "BLUE/ORANGE",
+    "category": "printed",
+    "price": 380,
+    "image": "/images/catalog/blue-orange.jpg",
+    "description": "Яркая сумка с сине-оранжевым принтом."
+  },
+  {
+    "id": 6,
+    "name": "BLUE/DARK",
+    "category": "classic",
+    "price": 400,
+    "image": "/images/catalog/blue-dark.jpg",
+    "description": "Глубокий синий цвет, классическая форма."
+  },
+  {
+    "id": 7,
+    "name": "SNAKE BAG #3",
+    "category": "printed",
+    "price": 390,
+    "image": "/images/catalog/snake-3.jpg",
+    "description": "Сумка с принтом змеиной кожи."
+  },
+  {
+    "id": 8,
+    "name": "LEOPARD",
+    "category": "printed",
+    "price": 410,
+    "image": "/images/catalog/leopard-1.jpg",
+    "description": "Сумка с леопардовым принтом."
+  },
+  {
+    "id": 9,
+    "name": "BLACK",
+    "category": "classic",
+    "price": 430,
+    "image": "/images/catalog/black-1.jpg",
+    "description": "Чёрная классическая сумка."
+  },
+  {
+    "id": 10,
+    "name": "GRETA MEDIUM",
+    "category": "printed",
+    "price": 470,
+    "image": "/images/catalog/greta-medium.jpg",
+    "description": "Квадратный силуэт, мягкие, скругленные формы делают эту модель женственной и притягательной. Оптимальный размер для тех, кто не любит габаритные сумки."
+  }
+]
