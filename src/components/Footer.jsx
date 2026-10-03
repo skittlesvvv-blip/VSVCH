@@ -1,6 +1,7 @@
+import { Link } from 'react-router-dom';
 import './Footer.css';
 
-function Footer({ organizationName }) {
+function Footer() {
     return (
         <footer className="footer">
             <div className="footer__container">
@@ -15,7 +16,11 @@ function Footer({ organizationName }) {
                 </div>
 
                 <div className="footer__center">
-                    <div className="footer__logo">{organizationName}</div>
+                    <img 
+                        src="/images/main/footer-logo-s.png" 
+                        alt="S Logo" 
+                        className="footer__logo-img" 
+                    />
                     <p className="footer__subscribe-text">
                         ПОДПИШИТЕСЬ, ЧТОБЫ ПОЛУЧАТЬ ОБНОВЛЕНИЯ, ДОСТУП К ЭКСКЛЮЗИВНЫМ ПРЕДЛОЖЕНИЯМ
                     </p>
@@ -52,7 +57,7 @@ function Footer({ organizationName }) {
                     <ul className="footer__list">
                         <li><a href="#" className="footer__link">КОНТАКТЫ</a></li>
                         <li><a href="#" className="footer__link">ПУБЛИЧНАЯ ОФЕРТА</a></li>
-                        <li><a href="/vacancies" className="footer__link">ВАКАНСИИ</a></li>
+                        <li><Link to="/vacancies" className="footer__link">ВАКАНСИИ</Link></li>
                     </ul>
                 </div>
 
